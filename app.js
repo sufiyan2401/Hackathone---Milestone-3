@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var cvEducation = document.getElementById('cvEducation');
             var cvWorkExperience = document.getElementById('cvWorkExperience');
             var cvSkills = document.getElementById('cvSkills');
+            var introductions = document.getElementById('introductions');
             var mainSection = document.querySelector('main');
             if (cvName) {
                 cvName.innerText = data.name || '';
@@ -112,6 +113,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if (cvEducation) {
                 cvEducation.innerText = data.education || '';
+            }
+            if (introductions) {
+                introductions.innerText = data.introduction || '';
             }
             if (cvWorkExperience) {
                 cvWorkExperience.innerText = data.workExperience || '';
